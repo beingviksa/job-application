@@ -1,0 +1,159 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Job Form/> render the JobForm Component 1`] = `
+<div>
+  <form>
+    <div
+      class="job-form"
+    >
+      <header>
+        <div
+          class="job-title"
+        >
+          <p
+            class="form-title-icon"
+            style="background-color: violet;"
+          >
+            1
+          </p>
+          <h1>
+            Job criteria
+          </h1>
+        </div>
+        <div
+          class="description"
+        >
+          we will use the data we collect here to better target your audience.
+        </div>
+      </header>
+      <div
+        class="input-field number-input"
+      >
+        <label
+          class="field-title"
+        >
+          A minimum No. years of experience
+        </label>
+        <input
+          max="40"
+          min="1"
+          placeholder="e.g 5+"
+          type="number"
+          value="4"
+        />
+      </div>
+      <div
+        class="input-field"
+      >
+        <label
+          class="field-title"
+        >
+          Level of education
+        </label>
+        <div
+          class="checkbox"
+        >
+          <input
+            checked=""
+            id="custom-checkbox-0"
+            name="bachelor"
+            type="checkbox"
+            value="Bachelor / Graduate"
+          />
+          <label
+            for="custom-checkbox-0"
+          >
+            Bachelor / Graduate
+          </label>
+        </div>
+        <div
+          class="checkbox"
+        >
+          <input
+            id="custom-checkbox-1"
+            name="highschool"
+            type="checkbox"
+            value="GCSE / A-Level / Highschool / GED"
+          />
+          <label
+            for="custom-checkbox-1"
+          >
+            GCSE / A-Level / Highschool / GED
+          </label>
+        </div>
+        <div
+          class="checkbox"
+        >
+          <input
+            id="custom-checkbox-2"
+            name="master"
+            type="checkbox"
+            value="Master / Post-Graduate /PhD"
+          />
+          <label
+            for="custom-checkbox-2"
+          >
+            Master / Post-Graduate /PhD
+          </label>
+        </div>
+        <div
+          class="checkbox"
+        >
+          <input
+            id="custom-checkbox-3"
+            name="diploma"
+            type="checkbox"
+            value="Vocational / Diploma / Associates degree"
+          />
+          <label
+            for="custom-checkbox-3"
+          >
+            Vocational / Diploma / Associates degree
+          </label>
+        </div>
+      </div>
+      <div
+        class="input-field"
+      >
+        <p
+          class="field-title"
+        >
+          No. of working hours (per week)
+        </p>
+        <div
+          class="working-hours-field number-input"
+        >
+          <label>
+            Min.
+             
+            <input
+              max="80"
+              min="20"
+              name="min"
+              type="number"
+              value="20"
+            />
+          </label>
+          <label>
+            Max.
+             
+            <input
+              max="80"
+              min="40"
+              name="max"
+              type="number"
+              value="50"
+            />
+          </label>
+        </div>
+      </div>
+      <button
+        data-testid="submit-button"
+        type="submit"
+      >
+        Save
+      </button>
+    </div>
+  </form>
+</div>
+`;

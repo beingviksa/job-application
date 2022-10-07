@@ -1,13 +1,173 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background: lightgray;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.job-form {
+  background: white;
+  width: 50%;
+  height: auto;
+  padding: 20px 20px 60px;
+  margin: 20px auto;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+.job-title {
+  display: flex;
+  align-items: center;
+}
+
+.job-title h1 {
+  font-size: 20px;
+}
+
+.form-title-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: white;
+  font-weight: bold;
+  margin: 0 10px 0 20px;
+}
+
+.description {
+  margin-left: 60px;
+  color: #8d9399;
+}
+
+.field-title {
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.input-field {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 24px;
+}
+
+.input-field label {
+  font-size: 14px;
+  margin-left: 4px;
+}
+
+.number-input input {
+  height: 24px;
+  width: 60px;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+}
+
+button {
+  float: right;
+  background: lightskyblue;
+  border: none;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  height: 40px;
+  min-width: 50px;
+  width: auto;
+}
+
+button:disabled,
+button[disabled] {
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+  cursor: not-allowed;
+  pointer-events: all !important;
+}
+
+.error-container {
+  display: flex;
+  align-items: center;
+}
+
+.error {
+  color: red;
+  margin-left: 10px;
+}
+
+.working-hours-field {
+  display: flex;
+}
+
+.working-hours-field label {
+  margin-right: 20px;
+}
+
+.working-hours-field input {
+  margin-left: 8px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tag {
+  font-size: 14px;
+  background-color: #d3d3d3;
+  width: max-content;
+  padding: 4px;
+  margin: 10px 0;
+  margin-right: 10px;
+}
+
+.overview-page {
+  padding-bottom: 20px;
+}
+
+.overview-content {
+  margin-left: 24px;
+}
+
+.overview-content__title {
+  color: #888888;
+}
+
+.overview-content__response {
+  color: black;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.overview-content__education {
+  font-weight: 600;
+}
+
+.overview-content__education h3 {
+  margin: 0;
+}
+
+.overview-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 480px) {
+  .job-form {
+    width: auto;
+    margin: 12px;
+  }
 }
